@@ -41,8 +41,8 @@ export const onPostBuild = async ({ pathPrefix }) => {
   await fs.move(currentStaticPath, newStaticPath)
 
   // Copy sitemap.xml
-  const sitemap = "sitemap.xml"
-  const currentSitemapPath = path.join(publicFolder, sitemap)
-  const newSitemapPath = path.join(assetFolder, sitemap)
-  await fs.copy(currentSitemapPath, newSitemapPath)
+  // const sitemap = "sitemap.xml"
+  // const currentSitemapPath = path.join(publicFolder, sitemap)
+  // const newSitemapPath = path.join(assetFolder, sitemap)
+  // await fs.copy(currentSitemapPath, newSitemapPath)
 }
